@@ -5,11 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { HeroService } from '../hero.service';
 import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { MessageService } from '../message.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-heroes',
   standalone: true,
-  imports: [CommonModule, FormsModule, HeroDetailComponent],
+  imports: [CommonModule, FormsModule, HeroDetailComponent, RouterLink],
   templateUrl: './heroes.component.html',
   styleUrl: './heroes.component.css',
 })
